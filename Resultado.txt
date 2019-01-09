@@ -1,1 +1,2 @@
 2, 3, 5, 7, 
+La suma de la Serie de Numeros Primos es:	17
