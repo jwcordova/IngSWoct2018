@@ -5,7 +5,7 @@ import java.io.PrintStream;
 public class Serie_Num_Primos {
 
     public static void main(String[] args) throws FileNotFoundException{
-        //PrintStream file = new PrintStream("Resultado.txt");
+        PrintStream file = new PrintStream("Resultado.txt");
         Scanner e = new Scanner(System.in);
         System.out.print("Serie de Numeros Primos \n");
         System.out.print("Ingresa el numero de elementos de la serie: ");
@@ -18,7 +18,8 @@ public class Serie_Num_Primos {
         while (c <= numIng) {
             if (p % d == 0) {
                 if (p == d) {
-                    System.out.print(p + ", ");
+                    //System.out.print(p + ", ");
+                    file.print(p + ", ");
                     c++;
                 }
                 d = 2;
@@ -27,5 +28,6 @@ public class Serie_Num_Primos {
                 d++;
             }
         }
+        System.out.print("Ahora los resultados seran generados en un archivo .txt");
     }
 }
